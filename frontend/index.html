@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmartMarket Streetwear - Tienda de moda urbana">
+    <meta name="theme-color" content="#111111">
+
+    <title>SmartMarket Streetwear</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         ENCABEZADO Y NAVEGACIÓN
+    ========================================== -->
+
+    <header>
+
+        <h1>SMARTMARKET</h1>
+
+        <p>STREETWEAR / URBAN CULTURE</p>
+
+        <nav>
+            <a href="#" data-vista="inicio">Inicio</a>
+            <a href="#" data-vista="productos">Productos</a>
+            <a href="#" data-vista="carrito">
+                Carrito <span id="contador-carrito">0</span>
+            </a>
+            <a href="#" data-vista="pedidos">Mis pedidos</a>
+            <a href="#" data-vista="estadisticas">Estadísticas</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- ==========================================
+             VISTA INICIO
+        ========================================== -->
+
+        <div id="vista-inicio" class="vista-pagina activa">
+
+            <section class="hero">
+
+                <div class="hero-contenido">
+
+                    <span class="hero-etiqueta">
+                        STREETWEAR / URBAN CULTURE
+                    </span>
+
+                    <h2>
+                        STREETWEAR
+                        <span>IS A CULTURE.</span>
+                    </h2>
+
+                    <p>
+                        No sigas tendencias. Crea tu propio estilo.
+                        Descubre una colección diseñada para destacar.
+                    </p>
+
+                    <a href="#" class="hero-boton" data-vista="productos">
+                        EXPLORAR COLECCIÓN
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+                <div class="hero-decoracion">
+                    <span>SM</span>
+                    <span>EST. 2026</span>
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- ==========================================
+             VISTA PRODUCTOS
+        ========================================== -->
+
+        <div id="vista-productos" class="vista-pagina">
+
+            <section id="categorias">
+
+                <h2>Explorar categorías</h2>
+
+                <div id="lista-categorias"></div>
+
+            </section>
+
+            <section id="productos">
+
+                <h2>Nuestra colección</h2>
+
+                <div id="lista-productos"></div>
+
+            </section>
+
+        </div>
+
+        <!-- ==========================================
+             VISTA CARRITO
+        ========================================== -->
+
+        <div id="vista-carrito" class="vista-pagina">
+
+            <section id="carrito">
+
+                <h2>Tu carrito</h2>
+
+                <div id="lista-carrito">
+                    <p>Tu carrito está vacío.</p>
+                </div>
+
+                <div class="carrito-resumen">
+
+                    <h3>
+                        Total:
+                        <span id="total-carrito">$0</span>
+                    </h3>
+
+                    <label for="cliente-select">
+                        Selecciona un cliente de demostración
+                    </label>
+
+                    <select id="cliente-select">
+                        <option value="">Cargando clientes...</option>
+                    </select>
+
+                    <button id="confirmar-pedido" disabled>
+                        CONFIRMAR PEDIDO
+                    </button>
+
+                    <p id="mensaje-pedido" aria-live="polite"></p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- ==========================================
+             VISTA MIS PEDIDOS
+        ========================================== -->
+
+        <div id="vista-pedidos" class="vista-pagina">
+
+            <section id="mis-pedidos">
+
+                <h2>Mis pedidos</h2>
+
+                <p>
+                    Consulta el historial de pedidos registrados
+                    en SmartMarket.
+                </p>
+
+                <div id="lista-pedidos">
+
+                    <p>Los pedidos aparecerán aquí.</p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- ==========================================
+             VISTA ESTADÍSTICAS
+        ========================================== -->
+
+        <div id="vista-estadisticas" class="vista-pagina">
+
+            <section id="estadisticas">
+
+                <h2>Analítica SmartMarket</h2>
+
+                <div id="resumen-estadisticas"></div>
+
+                <div id="graficas"></div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- ==========================================
+         PIE DE PÁGINA
+    ========================================== -->
+
+    <footer>
+
+        <p>SMARTMARKET STREETWEAR © 2026</p>
+
+        <p>Moda urbana | Tecnología | Big Data</p>
+
+    </footer>
+
+    <!-- ==========================================
+         CARRITO FLOTANTE SMARTMARKET
+    ========================================== -->
+
+    <button
+        id="abrir-carrito-flotante"
+        class="carrito-flotante"
+        aria-label="Abrir carrito"
+    >
+        <span class="icono-carrito">🛒</span>
+        <span id="contador-flotante">0</span>
+    </button>
+
+    <div id="fondo-carrito" class="fondo-carrito"></div>
+
+    <aside id="panel-carrito" class="panel-carrito">
+
+        <div class="panel-carrito-header">
+
+            <h2>MI CARRITO</h2>
+
+            <button id="cerrar-carrito-flotante">
+                ✕
+            </button>
+
+        </div>
+
+        <div id="productos-carrito-flotante">
+
+            <p>Tu carrito está vacío.</p>
+
+        </div>
+
+        <div class="panel-carrito-footer">
+
+            <h3>
+                Total:
+                <span id="total-flotante">$0</span>
+            </h3>
+
+            <button id="ir-carrito">
+                VER MI CARRITO
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ==========================================
+         MODAL DETALLES DEL PRODUCTO
+         SMARTMARKET STREETWEAR
+    ========================================== -->
+
+    <div id="modal-producto" class="modal-producto">
+
+        <div
+            class="modal-producto-fondo"
+            id="cerrar-modal-fondo"
+        ></div>
+
+        <div
+            class="modal-producto-contenido"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-producto-nombre"
+        >
+
+            <button
+                type="button"
+                class="modal-producto-cerrar"
+                id="cerrar-modal-producto"
+                aria-label="Cerrar detalles"
+            >
+                ✕
+            </button>
+
+            <div class="modal-producto-imagen">
+
+                <img
+                    id="modal-producto-foto"
+                    src=""
+                    alt="Imagen del producto"
+                >
+
+            </div>
+
+            <div class="modal-producto-info">
+
+                <span
+                    class="modal-producto-categoria"
+                    id="modal-producto-categoria"
+                >
+                    STREETWEAR
+                </span>
+
+                <h2 id="modal-producto-nombre">
+                    Nombre del producto
+                </h2>
+
+                <p
+                    class="modal-producto-descripcion"
+                    id="modal-producto-descripcion"
+                ></p>
+
+                <div
+                    class="modal-producto-precio"
+                    id="modal-producto-precio"
+                ></div>
+
+                <div
+                    class="modal-producto-stock"
+                    id="modal-producto-stock"
+                ></div>
+
+                <button
+                    type="button"
+                    class="modal-producto-agregar"
+                    id="modal-producto-agregar"
+                >
+                    AGREGAR AL CARRITO
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
