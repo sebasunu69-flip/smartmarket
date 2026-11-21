@@ -1,0 +1,272 @@
+id,cliente_id,tipo_evento,producto_id,detalles,fecha_evento
+1,,vista_producto,1,"{""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-16T15:57:45.106946
+2,,agregar_carrito,1,"{""cantidad"": 1}",2026-11-16T15:57:45.106946
+3,,compra,1,"{""metodo_pago"": ""tarjeta""}",2026-11-16T15:57:45.106946
+4,,vista_producto,3,"{""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-16T15:57:45.106946
+5,,busqueda,,"{""termino"": ""pantalones baggy""}",2026-11-16T15:57:45.106946
+6,,vista_producto,5,"{""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-16T15:57:45.106946
+7,,agregar_carrito,6,"{""cantidad"": 1}",2026-11-16T15:57:45.106946
+8,,busqueda,,"{""termino"": ""accesorios skate""}",2026-11-16T15:57:45.106946
+9,,agregar_carrito,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-10T00:59:13.084493
+10,,busqueda,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-14T14:04:16.271096
+11,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-14T00:31:05.543217
+12,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-15T18:09:48.204053
+13,,compra,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-11T22:01:57.198448
+14,,busqueda,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-10T06:38:04.125717
+15,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-12T21:03:26.156433
+16,,vista_producto,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-11T03:51:22.965015
+17,,compra,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-13T14:53:35.049107
+18,,agregar_carrito,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-09T22:22:28.00761
+19,,vista_producto,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-13T02:39:10.732199
+20,,compra,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-14T20:57:53.101707
+21,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-10T18:29:19.499099
+22,,compra,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-10T14:29:10.0632
+23,,vista_producto,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-13T06:56:57.661797
+24,,compra,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-10T21:13:32.906553
+25,,agregar_carrito,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-15T10:44:31.394399
+26,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-12T02:19:31.87019
+27,,compra,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-13T10:02:51.20135
+28,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-12T18:51:23.625751
+29,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-12T17:46:26.88351
+30,,compra,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-12T14:42:30.866716
+31,,vista_producto,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-16T07:45:14.272836
+32,,compra,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-12T11:14:20.421247
+33,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-14T23:00:37.002517
+34,,compra,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-12T09:30:30.567882
+35,,busqueda,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-15T06:45:09.988435
+36,,busqueda,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-10T07:39:44.630339
+37,,compra,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-13T00:15:59.303966
+38,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-11T17:31:01.035917
+39,,compra,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-10T11:51:38.423494
+40,,vista_producto,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-16T05:44:28.418312
+41,,vista_producto,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-13T16:26:41.621087
+42,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-13T10:35:14.842514
+43,,vista_producto,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-15T23:07:55.595316
+44,,compra,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-11T14:06:00.426818
+45,,compra,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-15T20:56:25.570565
+46,,agregar_carrito,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-11T09:10:17.40342
+47,,busqueda,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-13T22:45:44.309143
+48,,agregar_carrito,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-13T05:47:27.816257
+49,,busqueda,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-13T07:14:38.114297
+50,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-14T05:38:20.164102
+51,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-11T09:04:33.44429
+52,,busqueda,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-13T22:09:13.443731
+53,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-10T23:26:47.765035
+54,,busqueda,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-09T18:22:20.029547
+55,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-11T08:26:26.849626
+56,,compra,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-11T06:59:23.035712
+57,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-16T06:38:44.802015
+58,,vista_producto,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-12T23:21:48.890254
+59,,agregar_carrito,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-14T15:37:06.89099
+60,,agregar_carrito,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-13T20:32:57.687455
+61,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-13T11:39:11.925593
+62,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-15T10:59:45.285039
+63,,agregar_carrito,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-15T23:32:24.066421
+64,,busqueda,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-13T13:54:38.451195
+65,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-13T12:41:58.000113
+66,,busqueda,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-13T07:39:53.197247
+67,,compra,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-11T14:58:13.10484
+68,,vista_producto,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-11T09:31:36.168943
+69,,agregar_carrito,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-15T17:54:57.025099
+70,,busqueda,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-12T01:06:17.986795
+71,,busqueda,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-13T03:07:37.10505
+72,,vista_producto,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-14T00:56:03.702604
+73,,busqueda,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-10T01:10:29.922198
+74,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-15T20:05:39.451735
+75,,agregar_carrito,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-12T17:41:20.850315
+76,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-13T19:23:04.154592
+77,,compra,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-16T05:02:23.626208
+78,,agregar_carrito,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-10T16:22:37.591306
+79,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-15T14:05:06.690824
+80,,agregar_carrito,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-11T02:38:57.551712
+81,,busqueda,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-11T03:46:34.164593
+82,,busqueda,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-13T22:55:48.01999
+83,,vista_producto,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-10T16:08:49.074141
+84,,vista_producto,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-09T23:32:46.754055
+85,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-13T02:25:03.129067
+86,,busqueda,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-12T20:42:03.614083
+87,,vista_producto,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-09T23:19:10.472116
+88,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-15T17:04:45.852069
+89,,busqueda,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-13T15:29:45.420009
+90,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-16T15:06:58.714009
+91,,busqueda,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-14T00:27:46.010837
+92,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-13T13:33:53.521257
+93,,agregar_carrito,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-16T15:44:25.97251
+94,,vista_producto,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-14T11:59:19.592589
+95,,agregar_carrito,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-15T01:18:36.842963
+96,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-16T04:02:35.704424
+97,,agregar_carrito,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-16T02:34:10.167226
+98,,compra,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-14T07:35:20.808956
+99,,compra,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-16T11:09:30.301012
+100,,agregar_carrito,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-12T14:06:56.299146
+101,,agregar_carrito,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-12T23:43:32.131758
+102,,agregar_carrito,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-11T23:36:00.871349
+103,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-09T17:57:59.974791
+104,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-10T19:22:53.354759
+105,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-14T02:02:45.24086
+106,,vista_producto,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-14T15:53:59.949047
+107,,busqueda,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-10T08:09:47.195781
+108,,busqueda,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-16T13:03:02.671697
+109,,busqueda,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-15T18:43:20.40156
+110,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-11T23:44:10.329331
+111,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-11T16:06:42.137706
+112,,vista_producto,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-14T19:28:20.921081
+113,,compra,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-09T23:32:16.507124
+114,,vista_producto,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-14T11:32:38.775045
+115,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-10T18:53:41.14002
+116,,vista_producto,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-12T07:05:35.798078
+117,,compra,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-12T20:42:48.135735
+118,,busqueda,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-16T14:36:06.01932
+119,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-12T07:45:42.156554
+120,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-11T12:51:03.336473
+121,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-14T01:12:13.130056
+122,,agregar_carrito,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-15T03:32:05.233277
+123,,vista_producto,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-13T01:20:14.370704
+124,,busqueda,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-14T21:03:15.802899
+125,,agregar_carrito,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-10T22:13:36.559636
+126,,busqueda,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-14T04:44:09.748176
+127,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-13T05:13:07.143123
+128,,agregar_carrito,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-13T16:14:13.356652
+129,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-10T08:04:07.201313
+130,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-13T09:06:32.464297
+131,,compra,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-15T07:22:00.703719
+132,,agregar_carrito,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-14T09:29:10.252039
+133,,busqueda,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-16T06:42:41.731295
+134,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-15T15:39:22.232726
+135,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-15T14:38:31.02337
+136,,agregar_carrito,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-16T04:01:06.534203
+137,,vista_producto,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-16T09:33:20.387356
+138,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-13T07:18:01.243666
+139,,busqueda,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-16T02:54:23.665771
+140,,compra,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-10T02:34:38.105198
+141,,agregar_carrito,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-11T18:59:52.658487
+142,,busqueda,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-09T23:34:04.549134
+143,,busqueda,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-14T22:32:19.529066
+144,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-16T15:44:41.326537
+145,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-11T14:55:39.262009
+146,,compra,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-12T08:39:11.459594
+147,,compra,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-13T02:21:39.058058
+148,,agregar_carrito,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-15T15:28:24.260568
+149,,vista_producto,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-10T18:08:23.186542
+150,,compra,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-13T19:43:26.554376
+151,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-16T14:52:36.969628
+152,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-11T08:23:48.753524
+153,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-14T22:30:58.459683
+154,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-11T23:50:30.627152
+155,,busqueda,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-15T08:44:27.903704
+156,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-14T14:37:21.278936
+157,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-12T20:14:42.828099
+158,,agregar_carrito,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-11T02:49:37.095371
+159,,compra,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-13T14:29:57.151647
+160,,vista_producto,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-15T05:32:02.082778
+161,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-15T14:51:30.916148
+162,,compra,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-13T23:19:34.442708
+163,,compra,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-15T08:02:44.448824
+164,,compra,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-15T16:39:16.160384
+165,,vista_producto,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-10T10:49:53.702785
+166,,agregar_carrito,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-11T18:22:02.457886
+167,,vista_producto,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-14T04:41:49.859617
+168,,agregar_carrito,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-11T07:31:03.199738
+169,,vista_producto,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-14T00:17:13.486428
+170,,vista_producto,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-15T05:46:56.370828
+171,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-13T08:02:42.344058
+172,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-11T23:48:12.649833
+173,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-15T00:40:28.396961
+174,,vista_producto,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-12T22:20:15.322516
+175,,compra,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-12T02:41:09.642713
+176,,compra,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-11T15:46:19.014777
+177,,vista_producto,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-16T11:21:46.204984
+178,,busqueda,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-11T12:46:18.542533
+179,,busqueda,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-10T22:26:23.051994
+180,,compra,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-15T16:27:33.084078
+181,,compra,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-15T22:41:49.91922
+182,,compra,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-15T20:15:31.565444
+183,,agregar_carrito,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-10T01:50:50.274449
+184,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-16T05:09:16.538072
+185,,vista_producto,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-11T19:30:57.213278
+186,,vista_producto,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-11T17:51:00.497331
+187,,compra,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-13T20:30:56.064373
+188,,vista_producto,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-10T17:19:12.911608
+189,,compra,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-10T11:32:06.393426
+190,,agregar_carrito,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-10T14:00:47.194008
+191,,agregar_carrito,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-14T02:15:44.6596
+192,,busqueda,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-11T12:20:14.00603
+193,,agregar_carrito,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-13T19:00:36.644698
+194,,vista_producto,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-11T05:55:45.824968
+195,,vista_producto,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-14T00:57:53.97688
+196,,compra,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-11T09:01:03.249021
+197,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-13T17:25:32.572041
+198,,agregar_carrito,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-11T13:06:20.428014
+199,,compra,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-12T13:06:52.311298
+200,,compra,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-11T11:52:41.761898
+201,,busqueda,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-15T19:19:35.79927
+202,,agregar_carrito,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-12T07:22:03.246425
+203,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-11T13:16:36.59034
+204,,compra,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-15T09:27:03.276569
+205,,compra,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-10T20:53:02.9049
+206,,busqueda,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-12T23:56:49.237919
+207,,vista_producto,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-09T19:06:30.16236
+208,,busqueda,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-14T10:54:13.228722
+209,,vista_producto,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-12T15:01:50.464678
+210,,vista_producto,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-13T03:37:59.105521
+211,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-09T21:09:47.572866
+212,,agregar_carrito,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-10T22:17:32.749432
+213,,compra,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-11T17:04:46.047287
+214,,vista_producto,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-14T20:33:25.3533
+215,,agregar_carrito,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-09T21:52:30.976046
+216,,compra,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-13T11:45:08.375172
+217,,compra,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-14T19:41:29.2965
+218,,vista_producto,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-13T09:00:12.921937
+219,,busqueda,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-11T05:39:37.252707
+220,,agregar_carrito,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-11T00:54:40.996422
+221,,busqueda,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-15T08:53:51.780992
+222,,compra,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-12T22:53:38.706175
+223,,vista_producto,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-16T15:44:00.089381
+224,,agregar_carrito,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-15T08:48:58.90277
+225,,vista_producto,,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-13T21:05:12.575175
+226,,agregar_carrito,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-16T00:51:09.695221
+227,,vista_producto,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""web""}",2026-11-12T07:06:32.962874
+228,,agregar_carrito,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-14T10:40:30.252364
+229,,vista_producto,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-15T12:59:23.634863
+230,,vista_producto,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-09T23:01:27.571534
+231,,busqueda,1,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-16T02:29:14.483329
+232,,vista_producto,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""movil""}",2026-11-12T00:24:58.568416
+233,,compra,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-10T22:03:57.046087
+234,,vista_producto,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-13T12:27:20.316464
+235,,vista_producto,2,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-15T08:54:09.289949
+236,,compra,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-14T10:23:20.495381
+237,,busqueda,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""tablet""}",2026-11-12T22:32:52.817562
+238,,agregar_carrito,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-10T04:15:26.791121
+239,,vista_producto,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-11T23:27:54.358804
+240,,compra,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-11T21:55:15.366968
+241,,vista_producto,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-14T07:57:46.543436
+242,,agregar_carrito,8,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-11T02:07:43.942924
+243,,agregar_carrito,7,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-10T08:06:29.404322
+244,,compra,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-12T16:24:31.189511
+245,,compra,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""web""}",2026-11-12T10:19:32.167696
+246,,busqueda,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""busqueda"", ""dispositivo"": ""movil""}",2026-11-11T01:57:45.935517
+247,,busqueda,6,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-11T17:10:57.271961
+248,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-11T03:55:28.718964
+249,,busqueda,,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""movil""}",2026-11-12T17:36:17.293099
+250,,busqueda,3,"{""lote"": ""prueba_bigdata"", ""origen"": ""recomendacion"", ""dispositivo"": ""tablet""}",2026-11-15T09:07:03.639224
+251,,compra,4,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""web""}",2026-11-14T13:41:46.904258
+252,,compra,5,"{""lote"": ""prueba_bigdata"", ""origen"": ""catalogo"", ""dispositivo"": ""tablet""}",2026-11-16T03:12:19.494036
+1009,,vista_producto,9,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T02:38:16.682
+1013,,vista_producto,15,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T03:24:49.750
+1017,,vista_producto,12,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T04:44:28.235
+1021,,vista_producto,14,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:51:00.688
+1025,,vista_producto,14,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:51:21.146
+1029,,vista_producto,14,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:51:26.353
+1033,,vista_producto,14,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:51:32.403
+1037,,vista_producto,14,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:51:37.577
+1041,,vista_producto,14,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:52:09.735
+1045,,vista_producto,14,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:52:11.700
+1049,,vista_producto,14,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:52:14.932
+1053,,vista_producto,14,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:52:17.264
+1057,,vista_producto,14,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:52:19.248
+1061,,vista_producto,18,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:52:23.592
+1065,,vista_producto,18,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:52:25.579
+1069,,vista_producto,18,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:52:27.119
+1073,,vista_producto,18,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:52:29.111
+1077,,vista_producto,18,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-17T22:52:30.823
+1081,,vista_producto,9,"{""origen"":""SmartMarket"",""dispositivo"":""Computador""}",2026-11-21T03:01:55.086Z

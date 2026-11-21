@@ -29,3 +29,15 @@ data/*.json
 analisis/resultados/
 # Resultados generados por Spark
 analisis/resultados/
+
+# Resultados generados por Spark
+analisis/resultados_distribuidos/
+
+# Archivos temporales y respaldos de almacenamiento
+almacenamiento/__pycache__/
+almacenamiento/*.bak
+almacenamiento/respaldo_antes_eventos_1009_1080/
+
+# Respaldos comprimidos
+*.tar.gz
+*.zip

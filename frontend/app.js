@@ -167,6 +167,7 @@ function cambiarVista(nombreVista) {
 
     if (nombreVista === "estadisticas") {
         cargarEstadisticas();
+        cargarEstadisticasBigData();
     }
 }
 
@@ -416,6 +417,112 @@ async function cargarEstadisticas(esActualizacionAutomatica = false) {
 
     }
 }
+
+
+// ==========================================
+// ANALITICA BIG DATA CON APACHE SPARK
+// ==========================================
+
+async function cargarEstadisticasBigData() {
+
+    const resumen = document.getElementById("resumen-bigdata");
+    const graficas = document.getElementById("graficas-bigdata");
+
+    if (!resumen || !graficas) return;
+
+    resumen.innerHTML = "<p>Cargando resultados de Apache Spark...</p>";
+    graficas.innerHTML = "";
+
+    try {
+
+        const respuesta = await fetch(`${API}/api/estadisticas-bigdata`);
+
+        if (!respuesta.ok) {
+            throw new Error("No se pudieron consultar los resultados de Spark.");
+        }
+
+        const datos = await respuesta.json();
+
+        const totalEventos = Number(datos.totalEventos) || 0;
+
+        const categorias = Array.isArray(datos.eventosPorCategoria)
+            ? datos.eventosPorCategoria
+            : [];
+
+        const dispositivos = Array.isArray(datos.eventosPorDispositivo)
+            ? datos.eventosPorDispositivo
+            : [];
+
+        const origenes = Array.isArray(datos.eventosPorOrigen)
+            ? datos.eventosPorOrigen
+            : [];
+
+        const motor = escaparHTML(datos.motor || "Apache Spark");
+        const modo = escaparHTML(datos.modoEjecucion || "No especificado");
+
+        resumen.innerHTML = `
+            <div class="indicador-estadistica">
+                <span>Eventos procesados por Spark</span>
+                <strong>${totalEventos.toLocaleString("es-CO")}</strong>
+                <small>Total de registros analizados</small>
+            </div>
+
+            <div class="indicador-estadistica">
+                <span>Motor de procesamiento</span>
+                <strong class="texto-motor-bigdata">${motor}</strong>
+                <small>Procesamiento mediante PySpark</small>
+            </div>
+
+            <div class="indicador-estadistica">
+                <span>Modo de ejecución</span>
+                <strong class="texto-motor-bigdata">${modo}</strong>
+                <small>Configuración de Apache Spark</small>
+            </div>
+        `;
+
+        graficas.innerHTML = `
+            ${crearGraficaEstadisticas(
+                "Eventos procesados por categoría",
+                categorias,
+                "tipo_evento",
+                "cantidad"
+            )}
+
+            ${crearGraficaEstadisticas(
+                "Eventos por dispositivo",
+                dispositivos,
+                "dispositivo",
+                "cantidad"
+            )}
+
+            ${crearGraficaEstadisticas(
+                "Eventos según su origen",
+                origenes,
+                "origen",
+                "cantidad"
+            )}
+        `;
+
+    } catch (error) {
+
+        console.error("Error al cargar analítica Big Data:", error);
+
+        resumen.innerHTML = `
+            <p>No fue posible cargar los indicadores de Big Data.</p>
+        `;
+
+        graficas.innerHTML = `
+            <div class="grafica-card">
+                <h3>Resultados de Apache Spark</h3>
+                <p>Verifica que el endpoint y los archivos de análisis estén disponibles.</p>
+            </div>
+        `;
+    }
+}
+
+// ==========================================
+// FIN ANALITICA BIG DATA
+// ==========================================
 
 // CALCULOS DEL CARRITO
 // ==========================================

@@ -8,6 +8,7 @@ const express = require("express");
 const cors = require("cors");
 const { Pool } = require("pg");
 const path = require("path");
+const fs = require("fs");
 
 require("dotenv").config();
 
@@ -539,26 +540,210 @@ app.get("/api/estadisticas", async (req, res) => {
 
 });
 
-// REGISTRO DE VISTAS DE PRODUCTOS
-// BIG DATA SMARTMARKET
+
+// ==========================================
+// ESTADISTICAS BIG DATA - RESULTADOS PYSPARK
 // ==========================================
 
-app.post("/api/eventos/vista-producto", async (req, res) => {
+const directorioResultadosSpark = path.join(
+    __dirname,
+    "..",
+    "analisis",
+    "resultados_distribuidos"
+);
+
+function leerResultadoSpark(carpeta, columnaNombre) {
+
+    const directorio = path.join(directorioResultadosSpark, carpeta);
+
+    const archivos = fs.readdirSync(directorio)
+        .filter(nombre => nombre.startsWith("part-") && nombre.endsWith(".csv"));
+
+    if (archivos.length === 0) {
+        throw new Error(`No se encontro el CSV de resultados: ${carpeta}`);
+    }
+
+    const contenido = fs.readFileSync(
+        path.join(directorio, archivos[0]),
+        "utf8"
+    ).trim();
+
+    const filas = contenido.split(/\r?\n/);
+    const encabezados = filas[0].split(",");
+
+    const indiceNombre = encabezados.indexOf(columnaNombre);
+    const indiceCantidad = encabezados.indexOf("cantidad");
+
+    if (indiceNombre === -1 || indiceCantidad === -1) {
+        throw new Error(`Formato CSV incorrecto en ${carpeta}`);
+    }
+
+    return filas.slice(1).filter(Boolean).map(fila => {
+
+        const columnas = fila.split(",");
+
+        return {
+            [columnaNombre]: columnas[indiceNombre],
+            cantidad: Number(columnas[indiceCantidad])
+        };
+    });
+}
+
+app.get("/api/estadisticas-bigdata", (req, res) => {
 
     try {
 
+        const eventosPorCategoria = leerResultadoSpark(
+            "eventos_por_categoria",
+            "tipo_evento"
+        );
+
+        const eventosPorDispositivo = leerResultadoSpark(
+            "eventos_por_dispositivo",
+            "dispositivo"
+        );
+
+        const eventosPorOrigen = leerResultadoSpark(
+            "eventos_por_origen",
+            "origen"
+        );
+
+        const totalEventos = eventosPorCategoria.reduce(
+            (total, evento) => total + evento.cantidad,
+            0
+        );
+
+        res.json({
+            motor: "Apache Spark - PySpark",
+            modoEjecucion: "local[2]",
+            totalEventos,
+            eventosPorCategoria,
+            eventosPorDispositivo,
+            eventosPorOrigen
+        });
+
+    } catch (error) {
+
+        console.error(
+            "Error al consultar resultados de PySpark:",
+            error.message
+        );
+
+        res.status(500).json({
+            error: "No se pudieron consultar los resultados Big Data"
+        });
+    }
+});
+
+
+// ==========================================
+// COORDINADOR DE ALMACENAMIENTO DISTRIBUIDO
+// BIG DATA SMARTMARKET
+// ==========================================
+
+function convertirValorCSV(valor) {
+    const texto = valor === null || valor === undefined
+        ? ""
+        : String(valor);
+
+    if (/[",\r\n]/.test(texto)) {
+        return '"' + texto.replace(/"/g, '""') + '"';
+    }
+
+    return texto;
+}
+
+function guardarEventoDistribuido(evento) {
+    const id = Number(evento.id);
+
+    if (!Number.isInteger(id) || id <= 0) {
+        throw new Error("Identificador de evento no válido");
+    }
+
+    // Distribución circular entre los cuatro nodos
+    const nodoPrimario = ((id - 1) % 4) + 1;
+    const nodoReplica = (nodoPrimario % 4) + 1;
+
+    const base = path.join(__dirname, "../almacenamiento");
+
+    const archivoPrimario = path.join(
+        base,
+        `nodo_${nodoPrimario}`,
+        "primarios",
+        "eventos_primarios.csv"
+    );
+
+    const archivoReplica = path.join(
+        base,
+        `nodo_${nodoReplica}`,
+        "replicas",
+        `eventos_replica_nodo_${nodoPrimario}.csv`
+    );
+
+    if (!fs.existsSync(archivoPrimario) ||
+        !fs.existsSync(archivoReplica)) {
+        throw new Error("No se encontraron los archivos del nodo primario o réplica");
+    }
+
+    // Evitar insertar dos veces el mismo identificador
+    const existeId = (archivo) =>
+        fs.readFileSync(archivo, "utf8")
+            .split(/\r?\n/)
+            .some(linea => linea.startsWith(`${id},`));
+
+    if (existeId(archivoPrimario) || existeId(archivoReplica)) {
+        throw new Error(`El evento ${id} ya existe en alguno de los archivos`);
+    }
+
+    const detalles = typeof evento.detalles === "string"
+        ? evento.detalles
+        : JSON.stringify(evento.detalles || {});
+
+    const fecha = new Date(evento.fecha_evento).toISOString();
+
+    const fila = [
+        evento.id,
+        evento.cliente_id,
+        evento.tipo_evento,
+        evento.producto_id,
+        detalles,
+        fecha
+    ].map(convertirValorCSV).join(",") + "\n";
+
+    // Guardar los tamaños originales para revertir una escritura parcial
+    const tamanoPrimario = fs.statSync(archivoPrimario).size;
+    const tamanoReplica = fs.statSync(archivoReplica).size;
+
+    try {
+        fs.appendFileSync(archivoPrimario, fila, "utf8");
+        fs.appendFileSync(archivoReplica, fila, "utf8");
+    } catch (error) {
+        fs.truncateSync(archivoPrimario, tamanoPrimario);
+        fs.truncateSync(archivoReplica, tamanoReplica);
+        throw error;
+    }
+
+    return {
+        nodoPrimario,
+        nodoReplica
+    };
+}
+
+// ==========================================
+// REGISTRO DE VISTAS DE PRODUCTOS
+// POSTGRESQL + CSV DISTRIBUIDO
+// ==========================================
+
+app.post("/api/eventos/vista-producto", async (req, res) => {
+    try {
         const productoId = Number(req.body.producto_id);
 
-        // Validar el identificador
         if (!Number.isInteger(productoId) || productoId <= 0) {
-
             return res.status(400).json({
                 error: "Identificador de producto no válido"
             });
-
         }
 
-        // Verificar que el producto exista y esté disponible
         const producto = await pool.query(`
             SELECT id, nombre
             FROM productos
@@ -568,71 +753,78 @@ app.post("/api/eventos/vista-producto", async (req, res) => {
         `, [productoId]);
 
         if (producto.rowCount === 0) {
-
             return res.status(404).json({
                 error: "Producto no encontrado o no disponible"
             });
-
         }
 
-        // Identificar el dispositivo
         const userAgent = req.get("user-agent") || "";
 
         let dispositivo = "Computador";
 
         if (/tablet|ipad/i.test(userAgent)) {
-
             dispositivo = "Tablet";
-
         } else if (/mobile|android|iphone/i.test(userAgent)) {
-
             dispositivo = "Celular";
-
         }
 
-        // Registrar el evento en PostgreSQL
-        await pool.query(`
+        // Registrar en PostgreSQL y recuperar el evento completo
+        const resultado = await pool.query(`
             INSERT INTO eventos (
                 tipo_evento,
                 producto_id,
                 detalles
             )
             VALUES ($1, $2, $3)
+            RETURNING
+                id,
+                cliente_id,
+                tipo_evento,
+                producto_id,
+                detalles,
+                fecha_evento
         `, [
             "vista_producto",
             productoId,
             JSON.stringify({
-                dispositivo: dispositivo,
+                dispositivo,
                 origen: "SmartMarket"
             })
         ]);
 
+        const evento = resultado.rows[0];
+
+        // Enviar el mismo evento al primario y a su réplica
+        const distribucion = guardarEventoDistribuido(evento);
+
+        console.log(
+            `Evento ${evento.id}: primario nodo ${distribucion.nodoPrimario}, ` +
+            `réplica nodo ${distribucion.nodoReplica}`
+        );
+
         res.status(201).json({
-
-            mensaje: "Vista de producto registrada correctamente",
-
+            mensaje: "Vista registrada en PostgreSQL y almacenamiento distribuido",
+            evento_id: evento.id,
             producto: producto.rows[0].nombre,
-
             producto_id: productoId,
-
-            dispositivo: dispositivo
-
+            dispositivo,
+            nodoPrimario: distribucion.nodoPrimario,
+            nodoReplica: distribucion.nodoReplica
         });
 
     } catch (error) {
-
         console.error(
-            "Error al registrar vista de producto:",
+            "Error al registrar y distribuir vista de producto:",
             error.message
         );
 
         res.status(500).json({
-            error: "No se pudo registrar la vista del producto"
+            error: "No se pudo completar el registro distribuido",
+            detalle: error.message
         });
-
     }
-
 });
+
 // ==========================================
 // SERVIR ARCHIVOS DEL FRONTEND
 // ==========================================

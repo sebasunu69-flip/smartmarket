@@ -1659,3 +1659,60 @@ header nav a.activo {
     text-align: right;
 }
 
+
+/* ==========================================
+   ANALITICA BIG DATA - APACHE SPARK
+========================================== */
+
+.separador-bigdata {
+    margin-top: 55px;
+    padding-top: 35px;
+    border-top: 2px solid #b6ff00;
+}
+
+.separador-bigdata h2 {
+    color: #b6ff00;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.separador-bigdata > p {
+    color: #aaaaaa;
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+#resumen-bigdata {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+#graficas-bigdata {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+
+.texto-motor-bigdata {
+    font-size: 1.35rem !important;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    #resumen-bigdata,
+    #graficas-bigdata {
+        grid-template-columns: 1fr;
+    }
+
+    .separador-bigdata {
+        margin-top: 40px;
+        padding-top: 25px;
+    }
+}
+
+/* ==========================================
+   FIN ANALITICA BIG DATA
+========================================== */
+
